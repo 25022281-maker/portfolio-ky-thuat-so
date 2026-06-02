@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kỹ thuật số - Vũ Đào Nam Huy</title>
+    <style>
+        :root {
+            --primary-color: #1a5632; /* Tông xanh lá giống trong tài liệu */
+            --secondary-color: #f4f9f5;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #247545;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 { border-bottom: none; text-align: center; font-size: 2.5em; margin-top: 10px; }
+        .intro-box {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .task-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+        .task-card:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .task-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .placeholder-img {
+            background: #f8f9fa;
+            border: 2px dashed #ccc;
+            padding: 40px 20px;
+            text-align: center;
+            color: #666;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ddd;
+            margin-top: 40px;
+        }
+        /* Style for blockquotes */
+        blockquote {
+            background: #f9f9f9;
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D""\2018""\2019";
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#trang-chu">Trang Chủ</a>
+            <a href="#bai1">Bài 1</a>
+            <a href="#bai2">Bài 2</a>
+            <a href="#bai3">Bài 3</a>
+            <a href="#bai4">Bài 4</a>
+            <a href="#bai5">Bài 5</a>
+            <a href="#bai6">Bài 6</a>
+            <a href="#tong-ket">Tổng Kết</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="trang-chu">
+            <h1>PORTFOLIO KỸ THUẬT SỐ</h1>
+            <div class="intro-box">
+                <h2>Giới thiệu bản thân</h2>
+                <p><strong>Họ và tên:</strong> Vũ Đào Nam Huy</p>
+                <p><strong>Lớp:</strong> K70E-EC6</p>
+                <p><strong>Ngành:</strong> Điện tử Viễn thông</p>
+                <p><strong>Trường:</strong> Đại học Công nghệ - Đại học Quốc gia Hà Nội (UET)</p>
+                
+                <h3>Mục tiêu học tập</h3>
+                <p>Nắm vững các kỹ năng công nghệ số cơ bản và ứng dụng Trí tuệ nhân tạo (AI) vào việc tối ưu hóa quy trình học tập, nghiên cứu và quản lý công việc cá nhân cũng như các dự án tại trường.</p>
+                
+                <h3>Mục tiêu của Portfolio</h3>
+                <p>Hệ thống hóa và trình bày trực quan các kiến thức, kỹ năng đã thực hành trong môn "Nhập môn Công nghệ số và Ứng dụng AI". Đây đồng thời là minh chứng năng lực số của bản thân để áp dụng vào thực tế sau này.</p>
+            </div>
+        </section>
+
+        <hr style="border: 1px solid #eee; margin: 40px 0;">
+
+        <h2 style="text-align: center; margin-bottom: 30px;">HỆ THỐNG CÁC BÀI TẬP THỰC HÀNH</h2>
+
+        <section id="bai1" class="task-card">
+            <div class="task-title">▼ Bài 1 - Mục 1.4: Thao tác cơ bản với tệp tin và thư mục</div>
+            <p><strong>Yêu cầu:</strong> Trình bày cấu trúc thư mục tối ưu, quy tắc đặt tên tệp và ảnh chụp minh họa.</p>
+            
+            <h3>Quy tắc đặt tên tệp:</h3>
+            <ul>
+                <li>Không sử dụng dấu tiếng Việt, không dùng khoảng trắng (dùng dấu gạch dưới `_` hoặc gạch ngang `-`).</li>
+                <li>Cấu trúc: <code>[Ngày tháng năm]_[Tên dự án/Môn học]_[Nội dung cụ thể]_[Phiên bản].đuôi</code></li>
+                <li>Ví dụ: <code>20260520_Nhom_CongNgheSo_BaoCao_v1.pdf</code></li>
+            </ul>
+
+            <div class="placeholder-img">
+                [Chèn ảnh chụp màn hình cây thư mục trên máy tính/Google Drive của bạn vào đây]<br>
+                <code>&lt;img src="link_anh_cua_ban.jpg" width="100%"&gt;</code>
+            </div>
+        </section>
+
+        <section id="bai2" class="task-card">
+            <div class="task-title">▼ Bài 2 - Mục 2.4: Tìm kiếm và đánh giá thông tin học thuật</div>
+            <p><strong>Yêu cầu:</strong> Trình bày kết quả tìm kiếm bằng toán tử nâng cao và bảng đánh giá nguồn tin.</p>
+            
+            <p><strong>Câu lệnh tìm kiếm (Ví dụ):</strong> <code>"Trí tuệ nhân tạo" AND "Giáo dục đại học" filetype:pdf site:.edu.vn</code></p>
+            
+            <div class="placeholder-img">
+                [Chèn ảnh chụp màn hình kết quả tìm kiếm trên Google Scholar/Google]<br>
+            </div>
+
+            <h3>Bảng đánh giá nguồn tin (Tiêu chí CRAAP)</h3>
+            <table>
+                <tr>
+                    <th>Tiêu chí</th>
+                    <th>Nguồn 1: [Tên bài báo/Tài liệu 1]</th>
+                    <th>Nguồn 2: [Tên bài báo/Tài liệu 2]</th>
+                </tr>
+                <tr>
+                    <td><strong>Currency (Tính thời sự)</strong></td>
+                    <td>Xuất bản năm 2024 (Rất cập nhật)</td>
+                    <td>Xuất bản năm 2021 (Khá cập nhật)</td>
+                </tr>
+                <tr>
+                    <td><strong>Reliability (Độ tin cậy)</strong></td>
+                    <td>Bài báo khoa học có phản biện (Peer-reviewed)</td>
+                    <td>Báo cáo từ tổ chức uy tín</td>
+                </tr>
+                <tr>
+                    <td><strong>Authority (Thẩm quyền)</strong></td>
+                    <td>Tiến sĩ ngành KHMT, Đại học ABC</td>
+                    <td>Bộ Giáo dục và Đào tạo</td>
+                </tr>
+                <tr>
+                    <td><strong>Purpose (Mục đích)</strong></td>
+                    <td>Nghiên cứu học thuật, khách quan</td>
+                    <td>Cung cấp thông tin định hướng</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="bai3" class="task-card">
+            <div class="task-title">▼ Bài 3 - Mục 3.4: Viết Prompt hiệu quả cho các tác vụ học tập</div>
+            <p><strong>Yêu cầu:</strong> So sánh Prompt ban đầu và Prompt cải tiến cùng kết quả đầu ra từ AI.</p>
+            
+            <div class="grid-2">
+                <div>
+                    <h3>Prompt ban đầu</h3>
+                    <blockquote>"Giải thích về mạch RLC."</blockquote>
+                    <p><em>Nhận xét:</em> Quá chung chung, AI trả về kết quả dàn trải, không tập trung vào trọng tâm cần học.</p>
+                </div>
+                <div>
+                    <h3>Prompt cải tiến</h3>
+                    <blockquote>"Đóng vai là một giảng viên ngành Điện tử Viễn thông, hãy giải thích đáp ứng quá độ của mạch RLC bậc cao theo cách dễ hiểu cho sinh viên năm nhất. Trình bày dưới dạng gạch đầu dòng và cho 1 ví dụ thực tế."</blockquote>
+                    <p><em>Nhận xét:</em> Có ngữ cảnh, vai trò, định dạng rõ ràng (Công thức cấu trúc Prompt tiêu chuẩn).</p>
+                </div>
+            </div>
+
+            <div class="placeholder-img">
+                [Chèn ảnh chụp màn hình kết quả đầu ra của ChatGPT/Gemini sau khi dùng Prompt cải tiến]
+            </div>
+        </section>
+
+        <section id="bai4" class="task-card">
+            <div class="task-title">▼ Bài 4 - Mục 4.4: Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</div>
+            <p><strong>Yêu cầu:</strong> Trình bày minh chứng sử dụng công cụ quản lý dự án nhóm và cách thức phối hợp.</p>
+            <ul>
+                <li><strong>Công cụ sử dụng:</strong> Notion / Trello / Google Workspace (Docs, Sheets, Drive).</li>
+                <li><strong>Cách thức phối hợp:</strong> Phân chia công việc theo trạng thái (To-do, In Progress, Done), họp nhóm qua Google Meet định kỳ.</li>
+            </ul>
+            <div class="placeholder-img">
+                [Chèn ảnh chụp màn hình bảng Kanban trên Trello/Notion hoặc lịch sử chỉnh sửa chung trên Google Docs]
+            </div>
+        </section>
+
+        <section id="bai5" class="task-card">
+            <div class="task-title">▼ Bài 5 - Mục 5.4: Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</div>
+            <p><strong>Yêu cầu:</strong> Trưng bày sản phẩm nội dung số hoàn thiện (hình ảnh, video hoặc bài viết) được hỗ trợ bởi AI.</p>
+            <p><strong>Sản phẩm:</strong> [Ví dụ: Hình ảnh thiết kế logo / Bài viết truyền thông cho sự kiện FET ESPORTS] được tạo ra với sự hỗ trợ lên ý tưởng từ Gemini/ChatGPT và tạo ảnh từ Midjourney/DALL-E.</p>
+            
+            <div class="placeholder-img">
+                [Chèn sản phẩm nội dung số của bạn vào đây (Hình ảnh hoặc Link Video)]
+            </div>
+        </section>
+
+        <section id="bai6" class="task-card">
+            <div class="task-title">▼ Bài 6 - Mục 6.4: Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</div>
+            <p><strong>Yêu cầu:</strong> Trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm.</p>
+            <div style="background-color: #fce8e6; padding: 15px; border-left: 4px solid #d93025; border-radius: 4px;">
+                <h3>Bộ nguyên tắc cá nhân</h3>
+                <ol>
+                    <li><strong>Minh bạch:</strong> Luôn ghi rõ phần nội dung nào được tạo ra hoặc hỗ trợ bởi AI trong các báo cáo, bài tập.</li>
+                    <li><strong>Kiểm chứng:</strong> Không tin tưởng tuyệt đối 100% vào AI. Luôn đối chiếu lại thông tin, công thức, số liệu với giáo trình và tài liệu chính thống.</li>
+                    <li><strong>Bảo mật:</strong> Không nhập các thông tin cá nhân nhạy cảm, dữ liệu nội bộ của trường/khoa vào các công cụ AI công cộng.</li>
+                    <li><strong>Công cụ hỗ trợ, không phải người làm thay:</strong> Chỉ dùng AI để gợi ý ý tưởng, tóm tắt tài liệu hoặc sửa lỗi, tuyệt đối không dùng AI để gian lận hay làm hộ toàn bộ bài tập.</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr style="border: 1px solid #eee; margin: 40px 0;">
+
+        <section id="tong-ket">
+            <h2>TỔNG KẾT & CẢM NHẬN</h2>
+            <div class="intro-box" style="background-color: #e8f0fe; border-left-color: #1a73e8;">
+                <p>Thông qua quá trình thực hiện dự án Portfolio này, bản thân em đã học được cách...</p>
+                <p><em>(Bạn hãy tự viết một đoạn văn ngắn khoảng 4-5 dòng chia sẻ cảm nhận thực tế của mình: Khó khăn gặp phải là gì? Kỹ năng nào được cải thiện nhiều nhất? Trải nghiệm khi áp dụng AI vào ngành Điện tử Viễn thông ra sao?...)</em></p>
+                
+                <p style="margin-top: 20px;"><strong>Cam kết liêm chính học thuật:</strong> Tôi xin cam đoan các nội dung trong Portfolio này được thực hiện bởi chính bản thân tôi, có tuân thủ đúng các nguyên tắc trích dẫn và sử dụng AI có trách nhiệm.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portfolio Kỹ thuật số - Vũ Đào Nam Huy.</p>
+    </footer>
+
+</body>
+</html>
